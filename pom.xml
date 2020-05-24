@@ -61,6 +61,7 @@
 
     <build>
         <plugins>
+            <!-- Maven构建插件，用于生成jar包-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
