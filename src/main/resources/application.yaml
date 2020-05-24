@@ -1,0 +1,22 @@
+#======================
+#==Server\u670D\u52A1\u5668\u914D\u7F6E
+#=====================
+server:
+  port: 80
+  servlet:
+    context-path: /sunny
+
+
+##===================
+##===Redis\u914D\u7F6E===
+##===================
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+
+  pool:
+    max-wait: -1 #\u6700\u5927\u7B49\u5F85\u7684\u963B\u585E\u65F6\u95F4\uFF08\u8D1F\u6570\u8868\u793A\u6CA1\u6709\u9650\u5236)
+    max-idle: 8 #\u6700\u5927\u7684\u7A7A\u95F2\u6570
+    min-idle: 0 #\u6700\u5C0F\u7684\u7A7A\u95F2\u6570

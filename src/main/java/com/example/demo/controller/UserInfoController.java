@@ -7,10 +7,14 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @Api(tags = "用户信息接口")
 @RequestMapping("/userInfo")
 public class UserInfoController {
+
+
 
     @PostMapping("/setName")
     @ApiOperation("设置用户名称")
@@ -20,5 +24,9 @@ public class UserInfoController {
     public String setName(@RequestParam(name = "name", defaultValue = "Sunny") String name) {
         return "Success:" + name;
     }
+
+   /* public List<UserInfo> userList(){
+
+    }*/
 
 }
